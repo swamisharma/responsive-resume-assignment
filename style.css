@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    color: #EEEEEE;
+}
+body{
+    background-color: #B7B78A;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px;
+    width: 90%;
+    margin: 20px auto;
+    min-height: 1000px;
+}
+.left-section{
+    background-color: #658864;
+}
+.right-section{
+    background-color: #B7B78A;
+}
+
+.left-content{
+    padding: 1rem;
+}
+
+.profile-image{
+    display: block;
+    width: 60%;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.social-media{
+    margin-bottom: 10px;
+}
+
+.personal-details ul{
+    list-style-type: none;
+    font-size: small;
+    padding-bottom: 20px;
+}
+
+.personal-details li{
+    padding-top: 12px;
+}
+
+.skills-title{
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    padding-top: 1.5rem;
+}
+
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+}
+
+.right-main-content{
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+.right-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about-me-para{
+    font-size: 0.9rem;
+    padding: 0.75rem;
+}
+
+.ed-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-row: 1fr 1fr 1fr;
+    padding: 0.75rem;
+}
+
+.ed-status{
+    height: 100px;
+}
+
+.comment{
+    color: #DDDDDD;
+    font-size: 0.9rem;
+}
+
+.exp-content{
+    padding: 0.75rem;
+}
+
+@media screen and (max-width: 674px) {
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .right-main-content{
+        padding: 3rem 0;
+    }
+}
